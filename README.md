@@ -13,6 +13,9 @@ Based off the IdentityServer4 samples, it uses uses ASP.NET Identity for identit
 
 A single page application made with React, TypeScript and Webpack. Uses [redux-oidc](https://github.com/maxmantz/redux-oidc) package for managing authentication.
 
+Note: I'm no longer using hash router, webpack dev server is configured to redirect all pages to index.html.
+When deploying to production, you will need a similar mecanism for the callback page to work (this can easily be done using Netlify or Firebase hosting).
+
 #### Api (http://localhost:5200)
 
 Based off the `dotnet new webapi` template. Has a global authorize filter.
